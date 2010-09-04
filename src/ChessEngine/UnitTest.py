@@ -27,7 +27,7 @@ class ChessBoardTest(unittest.TestCase):
         s.x = 1
         self.assertTrue(s.x == 1, "BoardSquare setter should allow legal locations.")
         s.x = 100
-        self.assertTrue(s.x is None, "BoardSquare setter should not allow illegal locations.")
+        self.assertTrue(s.x == 1, "BoardSquare setter should not allow illegal locations.")
         s.y = 9
         self.assertTrue(s.y is None, "BoardSquare setter should not allow illegal locations.")
         s.y = 0
@@ -35,7 +35,7 @@ class ChessBoardTest(unittest.TestCase):
         s.y = 1
         self.assertTrue(s.y == 1, "BoardSquare setter should allow legal locations.")
         s.y = 100
-        self.assertTrue(s.y is None, "BoardSquare setter should not allow illegal locations.")
+        self.assertTrue(s.y == 1, "BoardSquare setter should not allow illegal locations.")
 #END OF THE BALL!!!1#
     def test_BoardSquareOccupied(self):
         s = ChessBoard.BoardSquare()
