@@ -12,8 +12,8 @@ class BoardSquare():
     def isOccupied(self):
         if isinstance(self.piece, Piece):
             return True
-    	else: 
+        else: 
             return False
     def __init__(self):
         self.color = Piece.COLOR_INVALID
-	self.piece = None
+        self.piece = None
