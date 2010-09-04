@@ -20,21 +20,21 @@ class ChessBoardTest(unittest.TestCase):
         self.assertTrue(hasattr(s,"y"), "BoardSquare is missing attribute: y")
         self.assertTrue(s.x is None, "BoardSquare x should be None by default")
         self.assertTrue(s.y is None, "BoardSquare y should be None by default")
-        s.setX(9)
+        s.x = 9
         self.assertTrue(s.x is None, "BoardSquare setter should not allow illegal locations.")
-        s.setX(0)
+        s.x = 0
         self.assertTrue(s.x is None, "BoardSquare setter should not allow illegal locations.")
-        s.setX(1)
+        s.x = 1
         self.assertTrue(s.x == 1, "BoardSquare setter should allow legal locations.")
-        s.setX(100)
+        s.x = 100
         self.assertTrue(s.x is None, "BoardSquare setter should not allow illegal locations.")
-        s.setY(9)
+        s.y = 9
         self.assertTrue(s.y is None, "BoardSquare setter should not allow illegal locations.")
-        s.setY(0)
+        s.y = 0
         self.assertTrue(s.y is None, "BoardSquare setter should not allow illegal locations.")
-        s.setY(1)
+        s.y = 1
         self.assertTrue(s.y == 1, "BoardSquare setter should allow legal locations.")
-        s.setY(100)
+        s.y = 100
         self.assertTrue(s.y is None, "BoardSquare setter should not allow illegal locations.")
 #END OF THE BALL!!!1#
     def test_BoardSquareOccupied(self):
