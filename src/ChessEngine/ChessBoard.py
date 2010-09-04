@@ -10,10 +10,8 @@ class Piece():
 
 class BoardSquare():
     def isOccupied(self):
-        if isinstance(self.piece, Piece):
-            return True
-        else: 
-            return False
+        return isinstance(self.piece, Piece)
+        
     def __init__(self):
         self.color = Piece.COLOR_INVALID
         self.piece = None
